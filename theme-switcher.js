@@ -5,21 +5,23 @@
 (function () {
   var STORAGE_KEY = 'cbc-theme';
 
+  var DEFAULT_THEME = 'sage';
+
   var THEMES = [
-    { id: 'amber', name: 'Hearth Amber',   note: 'original',      swatch: '#D9852F' },
+    { id: 'sage',  name: 'Sage & Barnwood',note: 'default',       swatch: '#6B834F' },
     { id: 'gold',  name: 'Golden Meadow',  note: 'mustard gold',  swatch: '#C6952A' },
     { id: 'clay',  name: 'Terracotta Clay',note: 'warm clay red', swatch: '#BE5B3C' },
-    { id: 'sage',  name: 'Sage & Barnwood',note: 'muted sage',    swatch: '#6B834F' },
     { id: 'berry', name: 'Berry Bramble',  note: 'deep wine',     swatch: '#8C3F4D' },
-    { id: 'lake',  name: 'Lake Teal',      note: 'Champlain blue',swatch: '#3E7D82' }
+    { id: 'lake',  name: 'Lake Teal',      note: 'Champlain blue',swatch: '#3E7D82' },
+    { id: 'amber', name: 'Hearth Amber',   note: 'original',      swatch: '#D9852F' }
   ];
 
   function currentTheme() {
-    return document.documentElement.getAttribute('data-theme') || 'amber';
+    return document.documentElement.getAttribute('data-theme') || DEFAULT_THEME;
   }
 
   function applyTheme(id) {
-    if (id === 'amber') {
+    if (id === DEFAULT_THEME) {
       document.documentElement.removeAttribute('data-theme');
     } else {
       document.documentElement.setAttribute('data-theme', id);

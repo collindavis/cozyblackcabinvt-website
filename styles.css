@@ -10,13 +10,13 @@
   --ink:#211C16;         /* text on light */
   --cream:#F4EEE1;       /* warm cream surface */
   --birch:#FBF7EF;       /* card / panel */
-  --ember:#D9852F;       /* hearth amber — primary accent */
-  --ember-deep:#B86A1E;  /* accent hover */
-  --moss:#3B5641;        /* deep spruce — secondary accent */
+  --ember:#6B834F;       /* sage — primary accent */
+  --ember-deep:#546A3D;  /* accent hover */
+  --moss:#6B4230;        /* barnwood — secondary accent */
   --stone:#8A8275;       /* muted warm grey text */
   --line:rgba(33,28,22,.14);
   --line-dark:rgba(244,238,225,.16);
-  --on-accent:#1c1206;   /* text color placed on top of --ember surfaces */
+  --on-accent:#FBF7EF;   /* text color placed on top of --ember surfaces */
 
   /* type */
   --display:"Fraunces",Georgia,serif;
@@ -31,15 +31,15 @@
   --shadow:0 18px 50px -22px rgba(0,0,0,.45);
 }
 
-/* ---------- alternate palettes (earthy/nature, no orange) ---------- */
+/* ---------- alternate palettes (earthy/nature) ---------- */
+:root[data-theme="amber"]{
+  --ember:#D9852F; --ember-deep:#B86A1E; --moss:#3B5641; --on-accent:#1c1206;
+}
 :root[data-theme="gold"]{
   --ember:#C6952A; --ember-deep:#A87A1F; --moss:#3B5641; --on-accent:#1c1206;
 }
 :root[data-theme="clay"]{
   --ember:#BE5B3C; --ember-deep:#9C4830; --moss:#3B5641; --on-accent:#FBF7EF;
-}
-:root[data-theme="sage"]{
-  --ember:#6B834F; --ember-deep:#546A3D; --moss:#6B4230; --on-accent:#FBF7EF;
 }
 :root[data-theme="berry"]{
   --ember:#8C3F4D; --ember-deep:#6E2F3A; --moss:#3B5641; --on-accent:#FBF7EF;
@@ -120,6 +120,8 @@ section{padding-block:clamp(3.5rem,2.5rem + 5vw,7rem)}
 .nav{display:flex;align-items:center;justify-content:space-between;gap:1rem;height:70px}
 .brand{display:flex;align-items:center;gap:.6rem;text-decoration:none;color:var(--cream)}
 .brand .mark{width:26px;height:26px;flex:0 0 auto}
+.brand .mark .mark-stroke{stroke:var(--ember)}
+.brand .mark .mark-fill{fill:var(--ember)}
 .brand b{font-family:var(--display);font-weight:500;font-size:1.18rem;letter-spacing:-.01em}
 .brand span{font-size:.66rem;letter-spacing:.2em;text-transform:uppercase;color:var(--ember);display:block;line-height:1}
 .nav-links{display:flex;align-items:center;gap:1.6rem;list-style:none;margin:0;padding:0}
