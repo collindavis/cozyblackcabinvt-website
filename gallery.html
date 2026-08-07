@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<script>try{var t=localStorage.getItem('cbc-theme');if(t&&t!=='amber')document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
 <title>Gallery — Cozy Black Cabin VT</title>
 <meta name="description" content="Photo gallery of Cozy Black Cabin VT — a modern black cabin with mountain views near Mount Ascutney, Vermont.">
 <link rel="canonical" href="https://www.cozyblackcabinvt.com/gallery.html">
@@ -173,5 +174,6 @@
   lb.addEventListener('click',e=>{if(e.target===lb)close();});
   document.addEventListener('keydown',e=>{if(!lb.classList.contains('open'))return;if(e.key==='Escape')close();if(e.key==='ArrowLeft')open(idx-1);if(e.key==='ArrowRight')open(idx+1);});
 </script>
+<script src="theme-switcher.js"></script>
 </body>
 </html>
