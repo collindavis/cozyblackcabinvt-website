@@ -2,7 +2,7 @@
 
 Static marketing & direct-booking site for **Cozy Black Cabin VT** — a modern black cabin near Mount Ascutney in Brownsville (West Windsor), Vermont.
 
-No build step. Plain HTML/CSS/JS, deployed on Cloudflare Pages.
+No build step. Plain HTML/CSS/JS, deployed as a Cloudflare Worker (static assets).
 
 ## Structure
 ```
@@ -12,7 +12,8 @@ No build step. Plain HTML/CSS/JS, deployed on Cloudflare Pages.
 ├── styles.css      # all styles (design tokens at top)
 ├── main.js         # nav toggle, year, scroll reveals
 ├── assets/         # local images, favicon (to be added)
-├── _headers        # Cloudflare Pages caching + security headers
+├── _headers        # Cloudflare caching + security headers
+├── .assetsignore   # files kept out of the deployed Worker assets
 ├── robots.txt
 └── sitemap.xml
 ```
@@ -28,14 +29,10 @@ python3 -m http.server 8080
 # then open http://localhost:8080
 ```
 
-## Deploy (Cloudflare Pages)
-1. Push this repo to GitHub (`cozyblackcabin-website`).
-2. Cloudflare dashboard → **Workers & Pages → Create → Pages → Connect to Git**.
-3. Pick this repo. **Build command:** *(leave blank)* · **Output directory:** `/` (root).
-4. Deploy. Cloudflare gives you a `*.pages.dev` URL.
-5. Add the custom domain `www.cozyblackcabinvt.com` under the project's **Custom domains** tab and follow the DNS prompt.
-
-Every `git push` to the main branch auto-redeploys.
+## Deploy (Cloudflare Workers)
+The Cloudflare Worker `cozyblackcabinvt-website` is connected to this GitHub repo, so every push to `main` auto-redeploys.
+It serves the repo root as static assets; `.assetsignore` keeps `.git`, `tools/`, etc. from being published.
+The custom domain `www.cozyblackcabinvt.com` is set under the Worker's **Settings → Domains & Routes**.
 
 ## To do before go-live
 - [ ] Curate which photo goes in each homepage slot (current picks are placeholders).
