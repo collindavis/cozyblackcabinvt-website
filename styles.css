@@ -141,6 +141,12 @@ section{padding-block:clamp(3.5rem,2.5rem + 5vw,7rem)}
 .hero-tag .dot{width:7px;height:7px;border-radius:50%;background:var(--ember)}
 .hero h1{max-width:14ch;text-shadow:0 2px 30px rgba(0,0,0,.35)}
 .hero .lede{max-width:46ch;margin-top:1.2rem;color:#f1ebdd}
+.gf-badge{display:inline-flex;align-items:center;gap:.9rem;margin-top:1.6rem;text-shadow:0 1px 14px rgba(0,0,0,.65);color:#E3C16F}
+.gf-badge b{display:block;font-family:var(--display);font-weight:500;font-size:1.05rem;color:#fff;line-height:1.1}
+.gf-badge span{display:block;font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;color:#f1ebdd;margin-top:.25rem}
+.gf-badge div{text-align:center}
+.laurel{width:32px;height:54px;filter:drop-shadow(0 1px 6px rgba(0,0,0,.5));flex:0 0 auto}
+.laurel.flip{transform:scaleX(-1)}
 .hero-actions{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:1.8rem}
 .hero-scroll{position:absolute;left:50%;bottom:1.2rem;transform:translateX(-50%);z-index:2;color:#e7e0d2;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;opacity:.8;display:flex;flex-direction:column;align-items:center;gap:.4rem}
 .hero-scroll::after{content:"";width:1px;height:34px;background:linear-gradient(var(--ember),transparent);animation:drop 2.2s ease-in-out infinite}
