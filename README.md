@@ -32,7 +32,7 @@ python3 -m http.server 8080
 ## Deploy (Cloudflare Workers)
 The Cloudflare Worker `cozyblackcabinvt-website` is connected to this GitHub repo, so every push to `main` auto-redeploys.
 It serves the repo root as static assets; `.assetsignore` keeps `.git`, `tools/`, etc. from being published.
-The custom domain `www.cozyblackcabinvt.com` is set under the Worker's **Settings → Domains & Routes**.
+The canonical site is `https://cozyblackcabinvt.com`; `www` redirects to it (Cloudflare Redirect Rule). Domains are set under the Worker's **Settings → Domains & Routes**.
 
 ## To do before go-live
 - [ ] Curate which photo goes in each homepage slot (current picks are placeholders).
