@@ -185,9 +185,10 @@ section{padding-block:clamp(3.5rem,2.5rem + 5vw,7rem)}
 /* ---------- area / split ---------- */
 .split{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,4vw,4.5rem);align-items:center}
 .area-list{list-style:none;margin:1.5rem 0 0;padding:0;display:grid;gap:.1rem}
-.area-list li{display:grid;grid-template-columns:8.5rem 1fr;gap:1rem;padding:1rem 0;border-top:1px solid var(--line)}
+.area-list li{display:grid;grid-template-columns:6rem 1fr;gap:1rem;padding:1rem 0;border-top:1px solid var(--line)}
 .area-list li:last-child{border-bottom:1px solid var(--line)}
-.area-list .dist{font-family:var(--display);font-size:1.25rem;color:var(--moss);white-space:nowrap}
+.area-list .dist{font-family:var(--display);font-size:1.25rem;color:var(--moss);white-space:nowrap;text-align:center;line-height:1.2}
+.area-list .dist small{display:block;font-family:var(--body);font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:var(--stone);margin-top:.2rem}
 .area-list strong{display:block;font-weight:600}
 .area-list span{color:var(--stone);font-size:.92rem}
 .area-figure img{border-radius:var(--radius-lg);box-shadow:var(--shadow);aspect-ratio:3/4;object-fit:cover}
