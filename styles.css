@@ -85,7 +85,7 @@ p{margin:0 0 1rem}
 }
 .eyebrow::before{content:"";width:26px;height:1px;background:var(--ember);opacity:.7}
 .lede{font-size:clamp(1.1rem,1rem + .6vw,1.4rem);line-height:1.5;color:var(--ink)}
-h1 + .lede,h2 + .lede,h3 + .lede{margin-top:1.4rem}
+h1 + .lede,h2 + .lede,h3 + .lede,h1 + p,h2 + p,h2 + ul{margin-top:1.4rem}
 
 /* ---------- layout ---------- */
 .wrap{max-width:var(--maxw);margin-inline:auto;padding-inline:var(--gutter)}
@@ -170,7 +170,7 @@ section{padding-block:clamp(3.5rem,2.5rem + 5vw,7rem)}
 .feature:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
 .feature img{aspect-ratio:3/2;object-fit:cover}
 .feature .body{padding:1.3rem 1.4rem 1.6rem}
-.feature h3{margin-bottom:.4rem}
+.feature h3{margin-bottom:.75rem}
 .feature p{margin:0;color:var(--stone);font-size:.96rem}
 
 /* ---------- seasons (signature) ---------- */
@@ -183,7 +183,7 @@ section{padding-block:clamp(3.5rem,2.5rem + 5vw,7rem)}
 .season:hover img{transform:scale(1.06)}
 .season .body{position:relative;z-index:2;padding:1.4rem}
 .season .label{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;font-weight:700;color:#fff;margin-bottom:.5rem;display:block}
-.season h3{margin-bottom:.4rem}
+.season h3{margin-bottom:.75rem}
 .season p{font-size:.9rem;color:#d8d0c2;margin:0}
 
 /* ---------- area / split ---------- */
