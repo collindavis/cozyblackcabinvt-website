@@ -269,3 +269,10 @@ section{padding-block:clamp(3.5rem,2.5rem + 5vw,7rem)}
   .brand span{font-size:.5rem;letter-spacing:.1em}
   .nav-cta .btn{padding:.45rem .65rem;font-size:.72rem}
 }
+
+/* ---------- at a glance ---------- */
+.at-a-glance{background:var(--char);color:var(--cream);padding-block:1.1rem;border-bottom:1px solid var(--line-dark)}
+.at-a-glance ul{list-style:none;margin:0 auto;display:flex;flex-wrap:wrap;justify-content:center;gap:.5rem 1.5rem;font-size:.92rem;letter-spacing:.02em;color:#e7e0d2}
+.at-a-glance li{display:flex;align-items:baseline;gap:.35rem;white-space:nowrap}
+.at-a-glance b{font-family:var(--display);font-weight:500;font-size:1.15rem;color:#fff}
+@media (max-width:640px){.at-a-glance ul{gap:.4rem 1.1rem;font-size:.85rem}}
