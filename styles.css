@@ -223,7 +223,7 @@ section{padding-block:clamp(3.5rem,2.5rem + 5vw,7rem)}
 
 /* ---------- footer ---------- */
 .site-footer{background:#100E0A;color:#cabfae;padding-block:3.5rem 2rem;font-size:.92rem}
-.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:2.5rem;padding-bottom:2.5rem;border-bottom:1px solid var(--line-dark)}
+.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:2.5rem;padding-bottom:2.5rem;border-bottom:1px solid var(--line-dark)}
 .footer-grid h4{font-family:var(--body);font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;color:var(--ember);margin-bottom:1rem;font-weight:700}
 .footer-grid a{color:#cabfae;text-decoration:none;display:block;margin-bottom:.5rem}
 .footer-grid a:hover{color:var(--cream)}
