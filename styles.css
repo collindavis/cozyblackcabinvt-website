@@ -85,6 +85,7 @@ p{margin:0 0 1rem}
 }
 .eyebrow::before{content:"";width:26px;height:1px;background:var(--ember);opacity:.7}
 .lede{font-size:clamp(1.1rem,1rem + .6vw,1.4rem);line-height:1.5;color:var(--ink)}
+h1 + .lede,h2 + .lede,h3 + .lede{margin-top:1.4rem}
 
 /* ---------- layout ---------- */
 .wrap{max-width:var(--maxw);margin-inline:auto;padding-inline:var(--gutter)}
