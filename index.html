@@ -6,8 +6,8 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Cozy Black Cabin VT — Modern Black Cabin with Mountain Views in West Windsor, Vermont</title>
-<meta name="description" content="A modern, eco-friendly black cabin near Mount Ascutney in Brownsville (West Windsor), Vermont. Hot tub, fireplace, and epic mountain views — within 45 minutes of five ski areas. Book your Vermont getaway.">
+<title>Cabin Rental with Hot Tub near Mount Ascutney, VT | Cozy Black Cabin</title>
+<meta name="description" content="Modern log cabin on 7 private acres facing Mount Ascutney in Brownsville, VT. Sleeps 6, 3 bedrooms, hot tub, fireplace. Walk to Ascutney Outdoors; 30–45 min to Okemo &amp; Killington. Top 1% on Airbnb.">
 <link rel="canonical" href="https://cozyblackcabinvt.com/">
 <meta name="robots" content="max-image-preview:large">
 
@@ -29,21 +29,41 @@
 <!-- Local business / lodging structured data for SEO -->
 <script type="application/ld+json">
 {
-  "@context":"https://schema.org",
-  "@type":"LodgingBusiness",
-  "name":"Cozy Black Cabin VT",
-  "description":"A modern, eco-friendly black log cabin with mountain views in Brownsville (West Windsor), Vermont, near Mount Ascutney.",
-  "url":"https://cozyblackcabinvt.com/",
-  "telephone":"+1-802-909-2905",
-  "email":"cozyblackcabinvt@gmail.com",
-  "address":{"@type":"PostalAddress","streetAddress":"101 Bascom Farm Dr","addressLocality":"Brownsville","addressRegion":"VT","postalCode":"05037","addressCountry":"US"},
-  "amenityFeature":[
-    {"@type":"LocationFeatureSpecification","name":"Hot tub","value":true},
-    {"@type":"LocationFeatureSpecification","name":"Fireplace","value":true},
-    {"@type":"LocationFeatureSpecification","name":"Fire pit","value":true},
-    {"@type":"LocationFeatureSpecification","name":"Mountain view","value":true}
+  "@context": "https://schema.org",
+  "@type": ["LodgingBusiness", "VacationRental"],
+  "name": "Cozy Black Cabin VT",
+  "description": "A modern, eco-friendly black log cabin on seven private acres facing Mount Ascutney in Brownsville (West Windsor), Vermont. Sleeps 6, 3 bedrooms, 2.5 baths, 6-person hot tub, stone fireplace, fire pit. Within 45 minutes of Okemo, Killington, Sunapee, Saskadena Six and Quechee.",
+  "url": "https://cozyblackcabinvt.com/",
+  "image": [
+    "https://cozyblackcabinvt.com/assets/hero.webp",
+    "https://cozyblackcabinvt.com/assets/og-image.jpg",
+    "https://cozyblackcabinvt.com/assets/photos/cabin-31.webp",
+    "https://cozyblackcabinvt.com/assets/photos/cabin-47.webp"
   ],
-  "petsAllowed":false
+  "telephone": "+1-802-909-2905",
+  "email": "cozyblackcabinvt@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Brownsville",
+    "addressRegion": "VT",
+    "postalCode": "05037",
+    "addressCountry": "US"
+  },
+  "numberOfRooms": 3,
+  "occupancy": { "@type": "QuantitativeValue", "maxValue": 6 },
+  "petsAllowed": true,
+  "amenityFeature": [
+    { "@type": "LocationFeatureSpecification", "name": "Hot tub", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "Fireplace", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "Fire pit", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "Mountain view", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "Telescope", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "Wifi", "value": true }
+  ],
+  "sameAs": [
+    "https://www.airbnb.com/rooms/997108580786041441",
+    "https://www.instagram.com/cozyblackcabinvt"
+  ]
 }
 </script>
 <!-- Google tag (gtag.js) -->
@@ -92,7 +112,7 @@
 
 <!-- ============ HERO ============ -->
 <section class="hero">
-  <img class="hero-img" src="/assets/hero.webp" alt="The Cozy Black Cabin at dusk with Vermont mountains behind it">
+  <img class="hero-img" src="/assets/hero.webp" fetchpriority="high" alt="The Cozy Black Cabin at dusk with Vermont mountains behind it">
   <div class="wrap">
     <span class="hero-tag"><span class="dot"></span> Brownsville · West Windsor, Vermont</span>
     <h1>A black cabin in the green mountains.</h1>
@@ -110,11 +130,24 @@
   <div class="hero-scroll">Scroll</div>
 </section>
 
+<!-- ============ AT A GLANCE ============ -->
+<section class="at-a-glance" aria-label="The cabin at a glance">
+  <ul class="wrap">
+    <li><b>6</b> guests</li>
+    <li><b>3</b> bedrooms</li>
+    <li><b>2.5</b> baths</li>
+    <li><b>7</b> private acres</li>
+    <li><b>1,300 sq ft</b> deck</li>
+    <li>Hot tub · fireplace · fire pit</li>
+    <li>Dog friendly</li>
+  </ul>
+</section>
+
 <!-- ============ WELCOME ============ -->
 <section id="cabin">
   <div class="wrap welcome">
     <div class="figure reveal">
-      <img src="/assets/photos/cabin-04.webp" alt="Aerial view of the Cozy Black Cabin surrounded by autumn foliage">
+      <img loading="lazy" decoding="async" src="/assets/photos/cabin-04.webp" alt="Aerial view of the Cozy Black Cabin, its lawn and solar panels surrounded by autumn foliage">
       <div class="stat-chip"><b>4</b><span>Seasons of reasons</span></div>
     </div>
     <div class="reveal">
@@ -136,15 +169,15 @@
     <h2 style="max-width:18ch">The good stuff, all in one place.</h2>
     <div class="features">
       <article class="feature reveal">
-        <img src="/assets/photos/cabin-31.webp" alt="Hot tub on the deck">
+        <img loading="lazy" decoding="async" src="/assets/photos/cabin-31.webp" alt="Hot tub on the deck">
         <div class="body"><h3>Hot tub under the stars</h3><p>Steam rising, mountains in the dark, not a city light in sight. The best seat in Vermont after a day outside.</p></div>
       </article>
       <article class="feature reveal">
-        <img src="/assets/photos/cabin-47.webp" alt="Stone fireplace with a fire burning">
+        <img loading="lazy" decoding="async" src="/assets/photos/cabin-47.webp" alt="Stone fireplace with a fire burning">
         <div class="body"><h3>Fireside &amp; games</h3><p>Blankets, board games, and a proper fireplace. The kind of evening that makes everyone put their phones down.</p></div>
       </article>
       <article class="feature reveal">
-        <img src="/assets/photos/cabin-19.webp" alt="Mountain view from the deck">
+        <img loading="lazy" decoding="async" src="/assets/photos/cabin-19.webp" alt="Mountain view from the deck">
         <div class="body"><h3>Unparalleled views</h3><p>Wake up to the Green Mountains. Sunrise coffee, golden foliage, starry nights — the view is the amenity here.</p></div>
       </article>
     </div>
@@ -163,19 +196,19 @@
     </div>
     <div class="season-grid">
       <article class="season reveal">
-        <img src="/assets/photos/cabin-31.webp" alt="Hot tub overlooking the mountains">
+        <img loading="lazy" decoding="async" src="/assets/photos/cabin-31.webp" alt="Hot tub overlooking the mountains">
         <div class="body"><span class="label">Winter</span><h3>Ski &amp; soak</h3><p>Within 45 minutes or less to five ski areas, and a hot tub awaiting after a great day.</p></div>
       </article>
       <article class="season reveal">
-        <img src="/assets/photos/quiet-green.webp" alt="Children relaxing on a grassy hillside at sunset with mountains beyond">
+        <img loading="lazy" decoding="async" src="/assets/photos/quiet-green.webp" alt="Children relaxing on a grassy hillside at sunset with mountains beyond">
         <div class="body"><span class="label">Spring</span><h3>Quiet &amp; green</h3><p>Fresh green hillsides and maple sugaring. Peaceful days before the summer crowds arrive.</p></div>
       </article>
       <article class="season reveal">
-        <img src="/assets/photos/bike-hike.webp" alt="Family walking through a wildflower meadow beneath a ski lift line">
+        <img loading="lazy" decoding="async" src="/assets/photos/bike-hike.webp" alt="Family walking through a wildflower meadow beneath a ski lift line">
         <div class="body"><span class="label">Summer</span><h3>Bike &amp; hike</h3><p>Mountain biking and hiking nearby at Ascutney Outdoors, just a few minutes away.</p></div>
       </article>
       <article class="season reveal">
-        <img src="/assets/photos/cabin-02.webp" alt="Peak autumn foliage across the valley">
+        <img loading="lazy" decoding="async" src="/assets/photos/cabin-02.webp" alt="Aerial view of peak autumn foliage across the valley around the cabin">
         <div class="body"><span class="label">Fall</span><h3>Peak foliage</h3><p>Front-row seats to New England's spectacular color on the mountain.</p></div>
       </article>
     </div>
@@ -197,7 +230,7 @@
       </ul>
     </div>
     <div class="area-figure reveal">
-      <img src="/assets/photos/cabin-01.webp" alt="Aerial view of Mount Ascutney and the surrounding Vermont landscape">
+      <img loading="lazy" decoding="async" src="/assets/photos/cabin-01.webp" alt="Aerial view of Mount Ascutney rising above the cabin and fall foliage">
     </div>
   </div>
 </section>
@@ -210,13 +243,13 @@
       <a class="btn btn-ghost btn-arrow" href="gallery.html">See the full gallery</a>
     </div>
     <div class="gallery-grid">
-      <a class="wide" href="gallery.html"><img src="/assets/photos/cabin-02.webp" alt="Cabin exterior"></a>
-      <a class="tall" href="gallery.html"><img src="/assets/photos/cabin-03.webp" alt="Cabin detail"></a>
-      <a href="gallery.html"><img src="/assets/photos/cabin-04.webp" alt="Cabin interior"></a>
-      <a href="gallery.html"><img src="/assets/photos/cabin-06.webp" alt="Kitchen"></a>
-      <a href="gallery.html"><img src="/assets/photos/cabin-07.webp" alt="Bedroom"></a>
-      <a class="wide" href="gallery.html"><img src="/assets/photos/cabin-09.webp" alt="Deck and view"></a>
-      <a href="gallery.html"><img src="/assets/photos/cabin-10.webp" alt="Bathroom"></a>
+      <a class="wide" href="gallery.html"><img loading="lazy" decoding="async" src="/assets/photos/cabin-02.webp" alt="Aerial view of the cabin in the fall foliage"></a>
+      <a class="tall" href="gallery.html"><img loading="lazy" decoding="async" src="/assets/photos/cabin-03.webp" alt="Aerial view of the cabin, driveway and lawn on seven private acres"></a>
+      <a href="gallery.html"><img loading="lazy" decoding="async" src="/assets/photos/cabin-04.webp" alt="Aerial view of the cabin with the Vermont hills beyond"></a>
+      <a href="gallery.html"><img loading="lazy" decoding="async" src="/assets/photos/cabin-06.webp" alt="Black log cabin with a wraparound deck above a sloping lawn"></a>
+      <a href="gallery.html"><img loading="lazy" decoding="async" src="/assets/photos/cabin-07.webp" alt="Glass gable and deck of the cabin framed by autumn trees"></a>
+      <a class="wide" href="gallery.html"><img loading="lazy" decoding="async" src="/assets/photos/cabin-09.webp" alt="Cabin, deck and garage from the driveway in autumn"></a>
+      <a href="gallery.html"><img loading="lazy" decoding="async" src="/assets/photos/cabin-10.webp" alt="Close-up of the black log walls, glass gable and deck chairs"></a>
     </div>
   </div>
 </section>
