@@ -7,6 +7,7 @@ local folder of originals (--src), then writes optimized, repo-hosted assets:
 
   assets/photos/cabin-01.webp ... cabin-90.webp   (full, q82, max 2000px wide)
   assets/photos/cabin-01.jpg  ... cabin-90.jpg    (JPEG fallback, q80)
+  assets/photos/w900/cabin-NN.webp                (900px copies for srcset)
   assets/photos/hero.webp / hero.jpg              (1920px wide hero)
   assets/og-image.jpg                             (1200x630 social share)
 
@@ -68,6 +69,8 @@ def main():
         stem = OUT / f"cabin-{n:02d}"
         full.save(f"{stem}.webp", "WEBP", quality=WEBP_Q, method=6)
         full.save(f"{stem}.jpg", "JPEG", quality=JPEG_Q, optimize=True, progressive=True)
+        (OUT/"w900").mkdir(exist_ok=True)
+        fit(full, 900).save(OUT/"w900"/f"cabin-{n:02d}.webp", "WEBP", quality=78, method=6)
         if n == HERO_INDEX: hero_src = fit(raw, HERO_W)
         ok += 1
         print(f"  cabin-{n:02d}  {full.size[0]}x{full.size[1]}")
